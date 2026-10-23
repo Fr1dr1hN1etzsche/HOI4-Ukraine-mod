@@ -1,0 +1,13 @@
+UKR_imperialism = {
+
+	icon = GFX_decision_generic_monarchy
+	priority = 50
+	picture = GFX_decision_cat_picture_chi_political_support
+	visible_when_empty = no	
+	allowed = {
+		original_tag = UKR
+	}
+
+	visible = {
+	}
+}

@@ -1,0 +1,140 @@
+﻿capital = 202 #Kiev
+
+oob = "UKR_1936"
+add_ideas = {
+	UKR_industrial_rise
+	UKR_echo_of_the_holodomor
+	UKR_anti_communist_sentiment
+}
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+}
+
+set_grand_doctrine = mass_assault
+set_grand_doctrine = new_fleet_in_being
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+set_politics = {
+    ruling_party = communism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 5
+	communism = 90
+}
+create_country_leader = {
+	name = "Stanislav Kosior"
+	desc = "Stanislaw Kosior was born in 1889 in Wegrow in the Siedlce Governorate of the Russian Empire, in the region of Podlachia, to a Polish family of humble factory workers. Because of poverty, he migrated east to Yuzovka (modern Donetsk), where he worked at a steel mill. In 1907 he joined the Russian Social Democratic Labour Party and quickly became the head of the party's local branch. He was arrested and sacked from his job later that year, and the following year felt obliged to leave the area due to police activity. He used connections to get re-appointed at the Sulin factory in 1909 but was soon arrested again and deported to the Pavlovsk mine.[1] In 1913, he was transferred to Moscow and then to Kyiv and Kharkiv, where he organized local communist cells. In 1915, he was arrested by the Okhrana, the Russian secret police, and exiled to Siberia."
+	picture = GFX_stanislaw_kosior
+	expire = "1961.1.1"
+	ideology = stalinism
+	traits = {
+
+	}
+}
+create_country_leader = {
+	name = "Hetman elections"
+	desc = "The state is at a historic crossroads. The old chains have been broken, but the throne of the Hetman remains empty, surrounded by intense political rivalries and competing factions. To prevent the country from sliding back into chaos, a Provisional Directorate has assumed emergency control. They are the caretakers of the republic—holding the nation together by a thread while the preparations for the fateful election are underway. Every faction is mobilizing, and every potential candidate is gathering support. The Directorate's time is short, and their only duty is to keep the state alive until the next true Hetman is chosen to guide us into the future"
+	picture = GFX_hetman_soviet
+	expire = "1991.1.1"
+	ideology = centrism
+	traits = {
+
+	}
+}
+create_country_leader = {
+	name = "Dmytro Doroshenko"
+	desc = "A brilliant historian and diplomat, Dmytro Doroshenko served as the Minister of Foreign Affairs under the 1918 Hetmanate. Returning from exile, he stands as a key leader of Ukrainian moderate democracy. Doroshenko seeks to establish a stable, constitutional state by blending traditional Ukrainian statehood with modern democratic institutions and strong ties to Western Europe"
+	picture = GFX_dmytro_doroshenko
+	expire = "1991.1.1"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+create_country_leader = {
+	name = "Yevhen Konovalets"
+	desc = "Yevhen Konovalets is a veteran military commander and a pivotal figure in the Ukrainian state. During the War of Independence, he achieved fame as the Colonel of the elite Sich Riflemen, proving himself a highly capable organizer and strategist. Following the stabilization of the state, Konovalets transitioned from a battlefield commander into a key political leader, bringing his strict discipline and vision of a strong, unified nation into the government"
+	picture = GFX_yevhen_konovalets
+	expire = "1991.1.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}

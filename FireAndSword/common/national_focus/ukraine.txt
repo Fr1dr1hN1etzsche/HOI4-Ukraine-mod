@@ -1,0 +1,2022 @@
+focus_tree = {
+	id = Ukraine_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 0 y = 4000 }
+
+	focus = {
+		id = UKR_normalysation
+		icon = GFX_focus_ETH_callout_to_the_world					
+
+		x = 10
+		y = 0
+	
+		cost = 10
+
+		available = {
+			has_government = communism
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = UKR_army_training
+		icon = GFX_				
+
+		x = 40
+		y = 0
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_infantry_training
+		relative_position_id = UKR_army_training
+		prerequisite = { focus = UKR_army_training }
+		icon = GFX_				
+
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_airforce_training
+		relative_position_id = UKR_army_training
+		prerequisite = { focus = UKR_army_training }
+		icon = GFX_				
+
+		x = -3
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_flotilla_training
+		relative_position_id = UKR_army_training
+		prerequisite = { focus = UKR_army_training }
+		icon = GFX_				
+
+		x = 3
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_infrastructure_rebuild
+		icon = GFX_goal_generic_construct_civ_factory				
+
+		x = 25
+		y = 0
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_factory_building
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_infrastructure_rebuild }
+		relative_position_id = UKR_infrastructure_rebuild
+		x = 0
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_capacity_building
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_factory_building }
+		relative_position_id = UKR_factory_building
+		x = 0
+		y = 2
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_increase_military_expenses
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_capacity_building }
+		relative_position_id = UKR_capacity_building
+		mutually_exclusive = {
+			focus = UKR_increase_civilians_expenses
+		}
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_military_factory_efficiency
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_increase_military_expenses }
+		relative_position_id = UKR_increase_military_expenses
+		x = 0
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_military_factory_construction_boost
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_military_factory_efficiency }
+		relative_position_id = UKR_military_factory_efficiency
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_researching_military_technologies
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_military_factory_efficiency }
+		relative_position_id = UKR_military_factory_efficiency
+		x = -1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_increase_civilians_expenses
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_capacity_building }
+		relative_position_id = UKR_capacity_building
+		mutually_exclusive = {
+			focus = UKR_increase_military_expenses
+		}
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_researching_new_technologies
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_increase_civilians_expenses }
+		relative_position_id = UKR_increase_civilians_expenses
+		x = 0
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_factory_construction_boost
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_researching_new_technologies }
+		relative_position_id = UKR_researching_new_technologies
+		x = -1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_infrastructure_construction_boost
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_researching_new_technologies }
+		relative_position_id = UKR_researching_new_technologies
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_west_reform
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_infrastructure_rebuild }
+		relative_position_id = UKR_infrastructure_rebuild
+		x = -2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_west_ukraine_reform
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_west_reform }
+		relative_position_id = UKR_west_reform
+		mutually_exclusive = {
+			focus = UKR_east_ukraine_reform
+		}
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_infrastructure_from_kiev_to_west
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_west_ukraine_reform }
+		relative_position_id = UKR_west_ukraine_reform
+		x = -2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_world_city_kiev
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_west_ukraine_reform }
+		relative_position_id = UKR_west_ukraine_reform
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_gas_production
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_world_city_kiev }
+		prerequisite = { focus = UKR_infrastructure_from_kiev_to_west }
+		relative_position_id = UKR_world_city_kiev
+		x = -1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_khmelnytskyi_vinnytsia
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_gas_production }
+		relative_position_id = UKR_gas_production
+		mutually_exclusive = {
+			focus = UKR_cherkasy_kherson_road
+		}
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_west_ukraine_economy_boost
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { 
+			focus = UKR_khmelnytskyi_zhytomyr
+			focus = UKR_khmelnytskyi_vinnytsia
+		}
+		relative_position_id = UKR_khmelnytskyi_zhytomyr
+		x = 1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_khmelnytskyi_zhytomyr
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_gas_production }
+		relative_position_id = UKR_gas_production
+		mutually_exclusive = {
+			focus = UKR_vinnytsia_odessa_road
+		}
+		x = -1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_east_reform
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_infrastructure_rebuild }
+		relative_position_id = UKR_infrastructure_rebuild
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_east_ukraine_reform
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_east_reform }
+		relative_position_id = UKR_east_reform
+		mutually_exclusive = {
+			focus = UKR_west_ukraine_reform
+		}
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_luhansk_coal
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_east_ukraine_reform }
+		relative_position_id = UKR_east_ukraine_reform
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_kharkiv_steel
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_east_ukraine_reform }
+		relative_position_id = UKR_east_ukraine_reform
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_east_city_investment
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_kharkiv_steel }
+		prerequisite = { focus = UKR_luhansk_coal }
+		relative_position_id = UKR_kharkiv_steel
+		x = 1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_donetsk_dnepropetrovsk
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_east_city_investment }
+		relative_position_id = UKR_east_city_investment
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_luhansk_kharkiv
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { focus = UKR_east_city_investment }
+		relative_position_id = UKR_east_city_investment
+		x = -1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_east_ukraine_economy_miracle
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { 
+			focus = UKR_donetsk_dnepropetrovsk 
+			focus = UKR_luhansk_kharkiv
+		}
+		relative_position_id = UKR_donetsk_dnepropetrovsk
+		x = -1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_ukraine_fabrication_miracle
+		icon = GFX_goal_generic_construct_civ_factory				
+		prerequisite = { 
+			focus = UKR_west_ukraine_economy_boost
+			focus = UKR_east_ukraine_economy_miracle
+		}
+		relative_position_id = UKR_capacity_building
+		x = 0
+		y = 4
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_socialism_path
+		icon = GFX_goal_UKR_communism
+		prerequisite = { focus = UKR_normalysation }
+		relative_position_id = UKR_normalysation
+		mutually_exclusive = {
+			focus = UKR_decrease_in_autonomy
+		}
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+			has_government = communism
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = UKR_decrease_in_autonomy
+		icon = GFX_focus_generic_commission	
+		prerequisite = { focus = UKR_normalysation }
+		relative_position_id = UKR_normalysation
+		mutually_exclusive = {
+			focus = UKR_socialism_path
+		}
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+		}
+	}
+	focus = {
+		id = UKR_ukrainization
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = UKR_decrease_in_autonomy }
+		relative_position_id = UKR_decrease_in_autonomy
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_autonomy_ratio = {
+				value = 0.15
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.03
+			}
+		}
+	}
+	focus = {
+		id = UKR_culturelization
+		icon = GFX_focus_POL_cossack_king
+		prerequisite = { focus = UKR_ukrainization }
+		prerequisite = { focus = UKR_unification_of_the_opposition }
+		prerequisite = { focus = UKR_elite_support }
+		relative_position_id = UKR_ukrainization
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = UKR_peace_with_the_past
+		icon = GFX_focus_HABSBURG_offensive_hussars
+		prerequisite = { focus = UKR_culturelization }
+		prerequisite = { focus = UKR_elite_opposition }
+		prerequisite = { focus = UKR_democratization }
+		relative_position_id = UKR_culturelization
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_opinion_modifier = {
+					target = POL
+					modifier = anti_imperialist
+			}
+		}
+	}
+	focus = {
+		id = UKR_elite_support
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = UKR_decrease_in_autonomy }
+		relative_position_id = UKR_decrease_in_autonomy
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.075
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = UKR_elite_opposition
+		icon = GFX_focus_NOR_empower_sivorg
+		prerequisite = { focus = UKR_elite_support }
+		prerequisite = { focus = UKR_ukrainization }
+		prerequisite = { focus = UKR_unification_of_the_opposition }
+		relative_position_id = UKR_elite_support
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.03
+			add_autonomy_ratio = {
+				value = 0.15
+			}
+		}
+	}
+	focus = {
+		id = UKR_propaganda_for_secession
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = UKR_elite_opposition }
+		prerequisite = { focus = UKR_culturelization }
+		prerequisite = { focus = UKR_democratization }
+		relative_position_id = UKR_elite_opposition
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.075
+			add_autonomy_ratio = {
+				value = 0.15
+			}
+		}
+	}
+	focus = {
+		id = UKR_unification_of_the_opposition
+		icon = GFX_focus_GER_expand_gestapo
+		prerequisite = { focus = UKR_decrease_in_autonomy }
+		relative_position_id = UKR_decrease_in_autonomy
+		x = 4
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_autonomy_ratio = {
+				value = 0.15
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.03
+			}
+		}
+	}
+	focus = {
+		id = UKR_democratization
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = UKR_unification_of_the_opposition }
+		prerequisite = { focus = UKR_ukrainization }
+		prerequisite = { focus = UKR_elite_support }
+		relative_position_id = UKR_unification_of_the_opposition
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = UKR_support_from_skoropadsky
+		icon = GFX_focus_GER_monarchy_compromise
+		prerequisite = { focus = UKR_democratization }
+		prerequisite = { focus = UKR_culturelization }
+		prerequisite = { focus = UKR_elite_opposition }
+		relative_position_id = UKR_democratization
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.03
+			add_autonomy_ratio = {
+				value = 0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = UKR_show_independence
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = UKR_peace_with_the_past }
+		prerequisite = { focus = UKR_propaganda_for_secession }
+		prerequisite = { focus = UKR_support_from_skoropadsky }
+		relative_position_id = UKR_peace_with_the_past
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.3
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = UKR_peaceful_separation
+		icon = GFX_focus_BEL_v_for_victory
+		prerequisite = { focus = UKR_show_independence }
+		relative_position_id = UKR_show_independence
+		mutually_exclusive = {
+			focus = UKR_military_coup
+		}
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.3
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = UKR_pressure_from_the_people
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = UKR_peaceful_separation }
+		relative_position_id = UKR_peaceful_separation
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.3
+			}
+			add_stability = -0.075
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.075
+			}
+		}
+	}
+	focus = {
+		id = UKR_real_independence
+		icon = GFX_focus_PER_communist_afghanistan_intervention
+		prerequisite = { focus = UKR_pressure_from_the_people }
+		relative_position_id = UKR_pressure_from_the_people
+		x = 0
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			leave_faction = yes
+			end_puppet = UKR
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.075
+			}
+			add_political_power = 50
+			remove_ideas = {
+				idea = UKR_anti_communist_sentiment
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_cosmetic_tag = UKR_Democratic
+		}
+	}
+	focus = {
+		id = UKR_military_coup
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = UKR_show_independence }
+		relative_position_id = UKR_show_independence
+		mutually_exclusive = {
+			focus = UKR_peaceful_separation
+		}
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			remove_ideas = {
+				idea = UKR_anti_communist_sentiment
+			}
+			start_civil_war = {
+				ideology = communism
+				size = 0.5
+			}
+			add_political_power = 100
+			leave_faction = yes
+			set_politics = {
+            	ruling_party = democratic
+            	elections_allowed = yes
+        	}
+			set_autonomy = {
+            	target = ROOT
+            	autonomy_state = autonomy_free
+        	}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+			set_cosmetic_tag = UKR_Democratic
+			every_enemy_country = {
+            	limit = {
+                	original_tag = ROOT 
+            	}
+            	set_cosmetic_tag = UKR_Communism
+        	}
+		}
+	}
+	focus = {
+		id = UKR_anticommunism_actions
+		icon = GFX_focus_GER_end_european_communism
+		prerequisite = { focus = UKR_military_coup }
+		relative_position_id = UKR_military_coup
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = -0.10
+			}
+		}
+	}
+	focus = {
+		id = UKR_represions_against_communism
+		icon = GFX_focus_spr_crush_the_revolution
+		prerequisite = { focus = UKR_anticommunism_actions }
+		relative_position_id = UKR_anticommunism_actions
+		x = 0
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = UKR_consolidate_power
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { 
+			focus = UKR_represions_against_communism 
+			focus = UKR_real_independence
+		}
+		relative_position_id = UKR_represions_against_communism
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.10
+			}
+			add_stability = 0.05
+			add_war_support = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_hetmanat_rises
+		icon = GFX_goal_UKR_hetman
+		prerequisite = { focus = UKR_consolidate_power }
+		relative_position_id = UKR_consolidate_power
+		mutually_exclusive = {
+			focus = UKR_demoracy_continues
+			focus = UKR_nationalist_popularity
+		}
+		x = -10
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			set_politics = {
+            	ruling_party = neutrality
+            	elections_allowed = yes
+        	}
+			set_cosmetic_tag = UKR_N
+		}
+	}
+	focus = {
+		id = UKR_skoropadsky
+		icon = GFX_goal_UKR_skoropadsky
+		prerequisite = { focus = UKR_hetmanat_rises }
+		relative_position_id = UKR_hetmanat_rises
+		mutually_exclusive = {
+			focus = UKR_skoropadsky_daughter
+		}
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			add_stability = 0.05
+			create_country_leader = {
+				name = "Pavlo Skoropadsky"
+				desc = "A seasoned military commander and the Hetman of 1918, Pavlo Skoropadsky returns to reclaim his titles and restore order to a chaotic nation. Known for his conservative pragmatism and strong leadership, he represents the traditional aristocratic Cossack statehood. Facing threats from both the radical left and external enemies, Skoropadsky aims to build a stable, disciplined, and independent state backed by a strong military"
+				picture = GFX_pavlo_skoropadsky
+				expire = "1991.1.1"
+				ideology = centrism
+				traits = {
+
+				}
+			}
+		}
+	}
+	focus = {
+		id = UKR_hetman_strong_hand
+		icon = GFX_goal_UKR_strong_hand
+		prerequisite = { focus = UKR_skoropadsky }
+		relative_position_id = UKR_skoropadsky
+		x = -2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.075
+			}
+			add_war_support = 0.05
+			add_ideas = UKR_hetman_strong_hand_idea
+		}
+	}
+	focus = {
+		id = UKR_hetman_thanks
+		icon = GFX_focus_generic_befriend_germany_democratic
+		prerequisite = { focus = UKR_hetman_strong_hand }
+		relative_position_id = UKR_hetman_strong_hand
+		x = -4
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.075
+			}
+			add_opinion_modifier = {
+					target = GER
+					modifier = non_aggression_pact
+			}
+		}
+	}
+	focus = {
+		id = UKR_hetman_german_empire
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = UKR_hetman_thanks }
+		relative_position_id = UKR_hetman_thanks
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			GER = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+				add_stability = -0.075
+			}
+		}
+	}
+	focus = {
+		id = UKR_hetman_german_empire_uprising
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = UKR_hetman_german_empire }
+		relative_position_id = UKR_hetman_german_empire
+		x = 0
+		y = 2
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			GER = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.15
+				}
+				add_stability = -0.1
+				start_civil_war = {
+                	ideology = neutrality 
+                	size = 0.6
+            	}
+			}
+		}
+	}
+	focus = {
+		id = UKR_hetman_german_empire_support
+		icon = GFX_focus_GER_all_for_the_front
+		prerequisite = { focus = UKR_hetman_german_empire_uprising }
+		relative_position_id = UKR_hetman_german_empire_uprising
+		x = 0
+		y = 4
+	
+		cost = 10
+
+		available = {
+			GER = {
+				has_government = neutrality
+			}
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			GER = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.15
+				}
+				add_stability = 0.075
+				add_opinion_modifier = {
+					target = UKR
+					modifier = non_aggression_pact
+				}
+			}
+			send_equipment = {
+                target = GER
+                type = infantry_equipment_1
+                amount = 5000
+            }
+            send_equipment = {
+                target = GER
+                type = support_equipment_1
+                amount = 500
+            }
+		}
+	}
+	focus = {
+		id = UKR_the_generals_past
+		icon = GFX_focus_DEN_generalkommandoen
+		prerequisite = { 
+			focus = UKR_hetman_strong_hand 
+			focus = UKR_reform_council_of_ministers
+		}
+		relative_position_id = UKR_hetman_strong_hand
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			add_country_leader_trait = past_general
+		}
+	}
+	focus = {
+		id = UKR_strengthening_the_council
+		icon = GFX_goal_UKR_concil
+		prerequisite = { 
+			focus = UKR_hetman_strong_hand 
+			focus = UKR_reform_council_of_ministers
+		}
+		relative_position_id = UKR_reform_council_of_ministers
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 30
+			add_ideas = UKR_council_mid
+		}
+	}
+	focus = {
+		id = UKR_skoropadsky_sich_cossacks
+		icon = GFX_goal_UKR_sich_cossaks
+		prerequisite = { 
+			focus = UKR_the_generals_past
+			focus = UKR_strengthening_the_council
+		}
+		relative_position_id = UKR_strengthening_the_council
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = UKR_cossacks_rise
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = UKR_claims_to_kuban
+		icon = GFX_goal_UKR_kuban
+		prerequisite = { 
+			focus = UKR_skoropadsky_serduke
+			focus = UKR_skoropadsky_sich_cossacks
+		}
+		relative_position_id = UKR_skoropadsky_sich_cossacks
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			218 = {
+            	add_core_of = ROOT
+        	}
+			234 = {
+            	add_core_of = ROOT
+        	}
+			add_political_power = 30
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = UKR_strength_government
+		icon = GFX_goal_UKR_concil_high
+		prerequisite = { 
+			focus = UKR_claims_criamea
+			focus = UKR_claims_to_kuban
+		}
+		relative_position_id = UKR_claims_to_kuban
+		x = -1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = UKR_council_high
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = UKR_lviv_question
+		icon = GFX_goal_UKR_lviv
+		prerequisite = {focus = UKR_strength_government}
+		relative_position_id = UKR_strength_government
+		x = -2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			91 = {
+				add_core_of = ROOT
+			}
+			89 = {
+				add_core_of = ROOT
+			}
+			93 = {
+				add_core_of = ROOT
+			}
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = UKR_bessarabia_conquery
+		icon = GFX_goal_UKR_bessarabia
+		prerequisite = {focus = UKR_strength_government}
+		relative_position_id = UKR_strength_government
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			80 = {
+				add_core_of = ROOT
+			}
+			78 = {
+				add_core_of = ROOT
+			}
+			766 = {
+				add_core_of = ROOT
+			}
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = UKR_ukrainan_imperialism
+		icon = GFX_goal_UKR_empire_1
+		prerequisite = {focus = UKR_strength_government}
+		prerequisite = {focus = UKR_lviv_question}
+		prerequisite = {focus = UKR_bessarabia_conquery}
+		relative_position_id = UKR_lviv_question
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+			add_ideas = UKR_empire_build
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = UKR_ukrainan_imperialism_continues
+		icon = GFX_goal_UKR_empire_2
+		prerequisite = {focus = UKR_ukrainan_imperialism}
+		relative_position_id = UKR_ukrainan_imperialism
+		x = 0
+		y = 2
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+			ad_stability = 0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_ideas = UKR_empire
+		}
+	}
+	focus = {
+		id = UKR_claims_criamea
+		icon = GFX_goal_UKR_criamea
+		prerequisite = { 
+			focus = UKR_skoropadsky_serduke
+			focus = UKR_skoropadsky_sich_cossacks
+		}
+		relative_position_id = UKR_skoropadsky_serduke
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.03
+			add_political_power = 50
+			137 = {
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = UKR_skoropadsky_serduke
+		icon = GFX_goal_UKR_serduky
+		prerequisite = { 
+			focus = UKR_the_generals_past
+			focus = UKR_strengthening_the_council
+		}
+		relative_position_id = UKR_the_generals_past
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = UKR_serduky_rise
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = UKR_reform_council_of_ministers
+		icon = GFX_goal_UKR_soviet_minister
+		prerequisite = { focus = UKR_skoropadsky }
+		relative_position_id = UKR_skoropadsky
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 30
+			add_ideas = UKR_council_start
+		}
+	}
+	focus = {
+		id = UKR_skoropadsky_daughter
+		icon = GFX_goal_UKR_skoropadsky_daughter
+		prerequisite = { focus = UKR_hetmanat_rises }
+		relative_position_id = UKR_hetmanat_rises
+		mutually_exclusive = {
+			focus = UKR_skoropadsky
+		}
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			set_politics = {
+            	ruling_party = neutrality
+            	elections_allowed = yes
+        	}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_stability = -0.05
+			create_country_leader = {
+				name = "Olena Ott-Skoropadska"
+				desc = "The youngest daughter of Hetman Pavlo Skoropadsky, Olena Ott-Skoropadska steps forward to guide the nation at a critical turning point. Having spent years in exile, she returns to carry on her family's legacy. As a symbol of continuity and constitutional monarchism, Olena seeks to unite the fractured factions under a modernized Hetmanate, blending traditional statehood with democratic reforms to secure the country's future"
+				picture = GFX_skoropadsky_daughter
+				expire = "1991.1.1"
+				ideology = centrism
+				traits = {
+
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_nationalist_popularity
+		icon = GFX_goal_UKR_nationalist_start
+		prerequisite = { focus = UKR_consolidate_power }
+		relative_position_id = UKR_consolidate_power
+		mutually_exclusive = {
+			focus = UKR_hetmanat_rises
+			focus = UKR_demoracy_continues
+		}
+		x = 10
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+	focus = {
+		id = UKR_nationalist_konovalets
+		icon = GFX_goal_UKR_nationalist
+		prerequisite = { focus = UKR_nationalist_popularity }
+		relative_position_id = UKR_nationalist_popularity
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = UKR_nationalist_bandera
+		icon = GFX_
+		prerequisite = { focus = UKR_nationalist_popularity }
+		relative_position_id = UKR_nationalist_popularity
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = UKR_demoracy_continues
+		icon = GFX_goal_UKR_democratic
+		prerequisite = { focus = UKR_consolidate_power }
+		relative_position_id = UKR_consolidate_power
+		mutually_exclusive = {
+			focus = UKR_hetmanat_rises
+			focus = UKR_nationalist_popularity
+		}
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_stability = 0.075
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_old_hetmanat_order
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_demoracy_continues }
+		relative_position_id = UKR_demoracy_continues
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_mazepa_and_khmelnytsky_honor
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_old_hetmanat_order }
+		relative_position_id = UKR_old_hetmanat_order
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_we_are_alone
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_old_hetmanat_order }
+		relative_position_id = UKR_old_hetmanat_order
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_beautiful_past_lessons
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { 
+			focus = UKR_we_are_alone 
+			focus = UKR_mazepa_and_khmelnytsky_honor
+		}
+		relative_position_id = UKR_we_are_alone
+		x = 3
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_ideas = UKR_past_lessons
+		}
+	}
+	focus = {
+		id = UKR_promoting_national_identity_in_lviv
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { 
+			focus = UKR_we_are_alone 
+			focus = UKR_mazepa_and_khmelnytsky_honor
+		}
+		relative_position_id = UKR_we_are_alone
+		x = -1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			91 = {
+				add_core_of = ROOT
+				remove_core_of = POL
+			}
+			89 = {
+				add_core_of = ROOT
+				remove_core_of = POL
+			}
+			93 = {
+				add_core_of = ROOT
+				remove_core_of = POL
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = UKR_peace_deal_with_poland
+		icon = GFX_focus_generic_befriend_poland
+		prerequisite = { focus = UKR_promoting_national_identity_in_lviv }	
+		relative_position_id = UKR_promoting_national_identity_in_lviv
+		mutually_exclusive = {focus = UKR_second_poland_war}
+		x = -1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_second_poland_war
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_promoting_national_identity_in_lviv }	
+		relative_position_id = UKR_promoting_national_identity_in_lviv
+		mutually_exclusive = {focus = UKR_peace_deal_with_poland}
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_militant_democracy
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { 
+			focus = UKR_second_poland_war 
+			focus = UKR_peace_deal_with_poland
+		}	
+		relative_position_id = UKR_second_poland_war
+		x = -1
+		y = 1
+	
+		cost = 10
+
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_national_identity_decision
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_militant_democracy }	
+		relative_position_id = UKR_militant_democracy
+		x = -1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_second_culturelization
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_militant_democracy }	
+		relative_position_id = UKR_militant_democracy
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_restoration_of_the_orthodox_church
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_second_culturelization }
+		prerequisite = { focus = UKR_national_identity_decision }	
+		relative_position_id = UKR_second_culturelization
+		x = -1
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_cossack_registry_liberties
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_restoration_of_the_orthodox_church }
+		relative_position_id = UKR_restoration_of_the_orthodox_church
+		mutually_exclusive = {focus = UKR_cossack_discipline}
+		x = -2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_cossack_discipline
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_restoration_of_the_orthodox_church }
+		relative_position_id = UKR_restoration_of_the_orthodox_church
+		mutually_exclusive = {focus = UKR_cossack_registry_liberties}
+		x = 2
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_hetmanat_democracy_rises
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { 
+			focus = UKR_cossack_registry_liberties 
+			focus = UKR_cossack_discipline
+		}
+		relative_position_id = UKR_cossack_registry_liberties
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_big_hetmanat
+		icon = GFX_goal_UKR_democracy_hetmanat
+		prerequisite = { focus = UKR_hetmanat_democracy_rises }
+		relative_position_id = UKR_hetmanat_democracy_rises
+		x = 0
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = UKR_demoracy_elections
+		icon = GFX_
+		prerequisite = { focus = UKR_demoracy_continues }
+		relative_position_id = UKR_demoracy_continues
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_stability = 0.075
+			add_political_power = 50
+		}
+	}
+}	

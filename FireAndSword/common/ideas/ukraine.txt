@@ -1,0 +1,168 @@
+ideas = {
+	country = {
+
+		UKR_industrial_rise = {
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.075
+				infrastructure_construction_factor = 0.05
+			}
+
+		}
+	}
+	country = {
+
+		UKR_echo_of_the_holodomor = {
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = BEL_traditional_family_values
+			modifier = {
+				research_speed_factor = -0.1
+				army_org_factor = -0.1
+				training_time_factor = 0.1
+			}
+		}
+	}
+	country = {
+
+		UKR_anti_communist_sentiment = {
+
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_communism_banned
+			modifier = {
+				mobilization_speed = -0.10
+				army_org_factor = -0.10
+			}
+		}
+	}
+	country = {
+
+		UKR_hetman_strong_hand_idea = {
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				training_time_factor = -0.15
+				army_org_factor = 0.075
+				political_power_factor = 0.10
+			}
+		}
+	}
+	country = {
+
+		UKR_council_start = {
+			removal_cost = -1
+			picture = idea_generic_monarchist_uprising
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+	}
+	country = {
+
+		UKR_council_mid = {
+			removal_cost = -1
+			picture = idea_generic_monarchist_uprising
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.05
+				stability_factor = 0.10
+			}
+		}
+	}
+	country = {
+
+		UKR_council_high = {
+			removal_cost = -1
+			picture = idea_generic_monarchist_uprising
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.075
+				stability_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+	country = {
+
+		UKR_cossacks_rise = {
+			removal_cost = -1
+			picture = idea_chi_army_corruption2
+			modifier = {
+				cavalry_attack_factor = 0.15
+			}
+		}
+	}
+	country = {
+
+		UKR_serduky_rise = {
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+	}
+	country = {
+
+		UKR_empire_build = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				justify_war_goal_time = -0.5
+			}
+		}
+	}
+	country = {
+
+		UKR_empire = {
+			removal_cost = -1
+			image = GFX_idea_UKR_empire
+			modifier = {
+				conscription_factor = 0.10 
+        		army_org_factor = 0.10   
+        		command_power_gain = 0.25
+        		war_support_factor = 0.10
+				stability_factor = 0.1
+				resistance_damage_to_garrison = -0.15
+			}
+		}
+	}
+	country = {
+
+		UKR_past_lessons = {
+			removal_cost = -1
+			image = GFX_
+			modifier = {
+				recruitable_population = 0.1
+			}
+		}
+	}
+}

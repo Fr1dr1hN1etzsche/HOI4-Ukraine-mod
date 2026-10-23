@@ -1,0 +1,9 @@
+
+spriteTypes = {	
+    				
+	spriteType = {
+		name = "GFX_stanislaw_kosior"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_stanislaw_kosior.dds"
+		legacy_lazy_load = no
+	}
+}

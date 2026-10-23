@@ -1,0 +1,39 @@
+
+
+#### Trait Icons for To Arms Against Tyranny ####
+
+
+### FIN ###
+spriteTypes = {	
+    				
+	spriteType = {
+		name = "GFX_stanislaw_kosior"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_stanislaw_kosior.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hetman_soviet"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_hetman_soviet.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_pavlo_skoropadsky"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_skoropadsky.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_skoropadsky_daughter"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_skoropadsky_daughter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_dmytro_doroshenko"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_dmytro_doroshenko.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yevhen_konovalets"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_yevhen_konovalets.dds"
+		legacy_lazy_load = no
+	}
+}
